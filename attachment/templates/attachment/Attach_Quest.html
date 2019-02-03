@@ -1,0 +1,322 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Attachment
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div>
+        <b>
+            Por favor lea cada una de las siguientes afirmaciones y marque hasta que punto usted cree que cada afirmación
+            describe de manera adecuada sus sentimientos acerca de sus <b>relaciones cercanas con otras personas, en general</b>.
+        </b>
+    </div>
+    <br><br>
+    <div>
+        {% formfield player.attach1 label="" %}
+    </div>
+    <div>
+        <b>1. Me ayuda recurrir a los demás en tiempos de necesidad.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach1" id="attach1"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach1').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach1').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach1').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach1').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach1').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach1').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach1').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach1.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>2. Yo suelo discutir mis problemas y preocupaciones con los demás.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach2" id="attach2"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach2').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach2').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach2').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach2').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach2').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach2').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach2').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach2.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>3. Yo hablo de mis cosas con otras personas.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach3" id="attach3"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach3').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach3').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach3').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach3').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach3').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach3').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach3').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach3.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>4. Se me facilita depender de otras personas.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach4" id="attach4"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach4').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach4').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach4').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach4').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach4').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach4').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach4').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach4.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>5. No me siento cómodo(a) abriéndome a los demás.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach5" id="attach5"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach5').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach5').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach5').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach5').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach5').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach5').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach5').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach5.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>6. Prefiero no demostrarle a los demás cómo me siento en el fondo.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach6" id="attach6"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach6').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach6').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach6').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach6').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach6').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach6').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach6').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach6.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>7. Me suele preocupar que yo no le importo realmente a los demás.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach7" id="attach7"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach7').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach7').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach7').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach7').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach7').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach7').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach7').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach7.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>8. Me da miedo que los demás puedan abandonarme.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach8" id="attach8"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach8').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach8').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach8').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach8').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach8').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach8').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach8').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach8.errors }}
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <b>9. Me preocupa que yo no le importe a los demás de la misma manera que ellos me importan a mí.</b>
+        <br><br>
+        <div class="col-md-12">
+            <span>Totalmente en desacuerdo</span>
+            <input type="hidden" value=0 name="attach9" id="attach9"/>
+            <button type="button" class="btn-sm btn1" onclick="$('#attach9').val(1)"><b>1</b></button>
+            <button type="button" class="btn-sm btn2" onclick="$('#attach9').val(2)"><b>2</b></button>
+            <button type="button" class="btn-sm btn4" onclick="$('#attach9').val(3)"><b>3</b></button>
+            <button type="button" class="btn-sm btn6" onclick="$('#attach9').val(4)"><b>4</b></button>
+            <button type="button" class="btn-sm btn8" onclick="$('#attach9').val(5)"><b>5</b></button>
+            <button type="button" class="btn-sm btn9" onclick="$('#attach9').val(6)"><b>6</b></button>
+            <button type="button" class="btn-sm btn10" onclick="$('#attach9').val(7)"><b>7</b></button>
+            <span>Totalmente de acuerdo</span>
+            {{ form.attach9.errors }}
+        </div>
+    </div>
+    <br><br>
+    {% next_button %}
+</div>
+
+
+{% endblock %}
+
+{% block styles %}
+    <style type="text/css">
+        .btn1{
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            {#color: #000000;#}
+        }
+        .btn1:hover {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+        .btn1:focus {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+        .btn2{
+            border: 2px solid #E91E63;
+            border-radius: 10px;
+            {#color: #000000;#}
+        }
+        .btn2:hover {
+            background-color: #E91E63;
+            color: #000000;
+        }
+        .btn2:focus {
+            background-color: #E91E63;
+            color: #ffffff;
+        }
+        .btn3{
+            border: 2px solid #FF5722;
+            border-radius: 10px;
+            {#color: #FF5722;#}
+        }
+        .btn3:hover {
+            background-color: #FF5722;
+            color: #ffffff;
+        }
+        .btn3:focus {
+            background-color: #FF5722;
+            color: #ffffff;
+        }
+        .btn4{
+            border: 2px solid #FF9800;
+            border-radius: 10px;
+            {#color: #FF9800;#}
+        }
+        .btn4:hover {
+            background-color: #FF9800;
+            color: #ffffff;
+        }
+        .btn4:focus {
+            background-color: #FF9800;
+            color: #ffffff;
+        }
+        .btn5{
+            border: 2px solid #FFC107;
+            border-radius: 10px;
+            {#color: #FFC107;#}
+        }
+        .btn5:hover {
+            background-color: #FFC107;
+            color: #ffffff;
+        }
+        .btn5:focus {
+            background-color: #FFC107;
+            color: #ffffff;
+        }
+        .btn6{
+            border: 2px solid #FFEB3B;
+            border-radius: 10px;
+            {#color: #FFEB3B;#}
+        }
+        .btn6:hover {
+            background-color: #FFEB3B;
+            color: #ffffff;
+        }
+        .btn6:focus {
+            background-color: #FFEB3B;
+            color: #ffffff;
+        }
+        .btn7{
+            border: 2px solid #CDDC39;
+            border-radius: 10px;
+            {#color: #CDDC39;#}
+        }
+        .btn7:hover {
+            background-color: #CDDC39;
+            color: #ffffff;
+        }
+        .btn7:focus {
+            background-color: #CDDC39;
+            color: #ffffff;
+        }
+        .btn8{
+            border: 2px solid #8BC34A;
+            border-radius: 10px;
+            {#color: #8BC34A;#}
+        }
+        .btn8:hover {
+            background-color: #8BC34A;
+            color: #ffffff;
+        }
+        .btn8:focus {
+            background-color: #8BC34A;
+            color: #ffffff;
+        }
+        .btn9{
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            {#color: #4CAF50;#}
+        }
+        .btn9:hover {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .btn9:focus {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .btn10{
+            border: 2px solid #009688;
+            border-radius: 10px;
+            {#color: #009688;#}
+        }
+        .btn10:hover {
+            background-color: #009688;
+            color: #ffffff;
+        }
+        .btn10:focus {
+            background-color: #009688;
+            color: #ffffff;
+        }
+
+    </style>
+{% endblock %}

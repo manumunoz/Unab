@@ -19,6 +19,12 @@ SESSION_CONFIGS = [
         'num_demo_participants': 1,
         'app_sequence': ['socioecon'],
     },
+    {
+        'name': 'attachment',
+        'display_name': "attachment",
+        'num_demo_participants': 1,
+        'app_sequence': ['attachment'],
+    },
 ]
 
 
