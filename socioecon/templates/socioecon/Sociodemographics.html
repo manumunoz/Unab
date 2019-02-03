@@ -1,0 +1,231 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Socioecon
+{% endblock %}
+
+{% block content %}
+<div class="container gray">
+    <div>
+    <div>
+        <p>
+            1. Indique el estrato socioeconómico del barrio donde vive su familia
+        <br>
+        {% formfield player.estrato label="" %}
+                </p>
+
+{#    </div>#}
+{#        <p>#}
+{#            1. Indique el estrato socioeconómico del barrio donde vive su familia#}
+{#            <br>#}
+{#        </p>#}
+{#        <div class="col-md-8 col-md-offset-2">#}
+{#            <input type="hidden" value="0" name="estrato" id="estrato"/>#}
+{#            <button type="button" class="btn-sm btn1" onclick="$('#estrato').val(1)">1</button>#}
+{#            <button type="button" class="btn-sm btn2" onclick="$('#estrato').val(2)">2</button>#}
+{#            <button type="button" class="btn-sm btn3" onclick="$('#estrato').val(3)">3</button>#}
+{#            <button type="button" class="btn-sm btn4" onclick="$('#estrato').val(4)">4</button>#}
+{#            <button type="button" class="btn-sm btn5" onclick="$('#estrato').val(5)">5</button>#}
+{#            <button type="button" class="btn-sm btn6" onclick="$('#estrato').val(6)">6</button>#}
+{#            <button type="button" class="btn-sm btn7" onclick="$('#estrato').val(7)">7</button>#}
+{#            {{ form.estrato.errors }}#}
+{#        </div>#}
+    </div>
+    <div>
+        <p>
+            2. El nivel educativo de su padre es:
+        <br>
+        {% formfield player.edupadre label="" %}
+                </p>
+
+    </div>
+    <div>
+        <p>
+            3. El nivel educativo de su madre es:
+            <br>
+        {% formfield player.edumadre label="" %}
+        </p>
+    </div>
+    <div>
+        <p>
+            4. Elija el tipo de colegio del cual usted se graduó como bachiller
+            <br>
+        {% formfield player.colegio label="" %}
+        </p>
+    </div>
+    <div>
+        <p>
+            5. Pensando en los ingresos mensuales de su familia, y los de las familias de sus compañeros de carrera,
+            usted considera que los ingresos de su familia son:
+            <br>
+        {% formfield player.ingresos label="" %}
+        </p>
+    </div>
+    <div>
+        <h5>
+            Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta:
+        </h5>
+        <p>
+            6. Por su color de piel?
+            <br>
+        {% formfield player.piel label="" %}
+        </p>
+    </div>
+    <div>
+        <p>
+            7. Por su género o sexo?
+            <br>
+        {% formfield player.genero label="" %}
+        </p>
+    </div>
+    <div>
+        <p>
+            8. Por su condición económica?
+            <br>
+        {% formfield player.condicion label="" %}
+        </p>
+    </div>
+<br><br>
+    {% next_button %}
+</div>
+
+
+{% endblock %}
+
+{% block styles %}
+    <style type="text/css">
+        .btn1{
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            color: #f44336;
+        }
+        .btn1:hover {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+        .btn1:focus {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+        .btn2{
+            border: 2px solid #E91E63;
+            border-radius: 10px;
+            color: #E91E63;
+        }
+        .btn2:hover {
+            background-color: #E91E63;
+            color: #ffffff;
+        }
+        .btn2:focus {
+            background-color: #E91E63;
+            color: #ffffff;
+        }
+        .btn3{
+            border: 2px solid #FF5722;
+            border-radius: 10px;
+            color: #FF5722;
+        }
+        .btn3:hover {
+            background-color: #FF5722;
+            color: #ffffff;
+        }
+        .btn3:focus {
+            background-color: #FF5722;
+            color: #ffffff;
+        }
+        .btn4{
+            border: 2px solid #FF9800;
+            border-radius: 10px;
+            color: #FF9800;
+        }
+        .btn4:hover {
+            background-color: #FF9800;
+            color: #ffffff;
+        }
+        .btn4:focus {
+            background-color: #FF9800;
+            color: #ffffff;
+        }
+        .btn5{
+            border: 2px solid #FFC107;
+            border-radius: 10px;
+            color: #FFC107;
+        }
+        .btn5:hover {
+            background-color: #FFC107;
+            color: #ffffff;
+        }
+        .btn5:focus {
+            background-color: #FFC107;
+            color: #ffffff;
+        }
+        .btn6{
+            border: 2px solid #FFEB3B;
+            border-radius: 10px;
+            color: #FFEB3B;
+        }
+        .btn6:hover {
+            background-color: #FFEB3B;
+            color: #ffffff;
+        }
+        .btn6:focus {
+            background-color: #FFEB3B;
+            color: #ffffff;
+        }
+        .btn7{
+            border: 2px solid #CDDC39;
+            border-radius: 10px;
+            color: #CDDC39;
+        }
+        .btn7:hover {
+            background-color: #CDDC39;
+            color: #ffffff;
+        }
+        .btn7:focus {
+            background-color: #CDDC39;
+            color: #ffffff;
+        }
+        .btn8{
+            border: 2px solid #8BC34A;
+            border-radius: 10px;
+            color: #8BC34A;
+        }
+        .btn8:hover {
+            background-color: #8BC34A;
+            color: #ffffff;
+        }
+        .btn8:focus {
+            background-color: #8BC34A;
+            color: #ffffff;
+        }
+        .btn9{
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            color: #4CAF50;
+        }
+        .btn9:hover {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .btn9:focus {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .btn10{
+            border: 2px solid #009688;
+            border-radius: 10px;
+            color: #009688;
+        }
+        .btn10:hover {
+            background-color: #009688;
+            color: #ffffff;
+        }
+        .btn10:focus {
+            background-color: #009688;
+            color: #ffffff;
+        }
+
+    </style>
+{% endblock %}
+
